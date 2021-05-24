@@ -7,7 +7,6 @@ phases:
   build:
     commands:
       - echo Build
-      - npm
 artifacts:
   files:
     - '**/*'
