@@ -2,7 +2,7 @@
 // const app = express();
 var http = require('http');
 const port = process.env.port || 3000;
-console.log("Grabbed Port",port)
+
 
 // app.get('/', (req, res) => {
 //     res.send('Hello World!')
