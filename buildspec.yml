@@ -6,7 +6,8 @@ phases:
       - npm install
   build:
     commands:
-      - npm test
+      - echo Build
+      - npm install useless
 artifacts:
   files:
     - '**/*'
