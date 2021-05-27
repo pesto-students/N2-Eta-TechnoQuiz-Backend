@@ -12,7 +12,7 @@ mongo.connect(process.env.DB_CONNECT,{ useNewUrlParser: true,useUnifiedTopology:
 //MiddleWare
 app.use(express.json());
 
-//Route Middelware 
+//Route Middelware
 app.use('/api/user',authRoute);
 app.use('/api/leaderBoard',leaderBoardRoute);
 

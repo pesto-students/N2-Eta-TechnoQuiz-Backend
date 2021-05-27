@@ -6,7 +6,7 @@ router.get('/', async(req,res) => {
         const result = await User.find({},{name: 1,score:1}).sort({ score: -1 }).limit(10);
         res.status(200).send(result);
     }catch(err){
-        res.status(400).send(err)
+        res.status(400).send(err);
     } 
     
 })
