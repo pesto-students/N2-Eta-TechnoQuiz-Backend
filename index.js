@@ -4,9 +4,7 @@ const mongo = require('mongoose');
 const dotenv = require('dotenv');
 //Import Routes
 const authRoute = require('./routes/auth');
-
 dotenv.config();
-
 //Connect to DB
 mongo.connect(process.env.DB_CONNECT,{ useNewUrlParser: true,useUnifiedTopology: true },()=>console.log("Connected to DB"))
 
