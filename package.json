@@ -1,7 +1,7 @@
 {
   "name": "TechnoQuiz_Backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for TechnoQuizz App",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/liitcode/TechnoQuiz_Backend#readme",
   "dependencies": {
-    "@hapi/joi": "^17.1.1",
     "bcryptjs": "^2.4.3",
     "dotenv": "^10.0.0",
     "eslint": "^7.27.0",
