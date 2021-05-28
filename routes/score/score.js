@@ -6,11 +6,25 @@ const mongoose = require('mongoose');
 const validateScore = require('./validation');
 const User = require('../../models/user');
 
-router.post('/',verifyUser,(req,res)=>{
+router.post('/',verifyUser,async (req,res)=>{
     const { error } = validateScore(req.body);
     if(error) return res.status(400).send(error.details[0].message);
-    
-    res.send("ROute Working")
+    const sessionData = {
+        attemptDate : new Date().toJSON().replace(/-/g,'/'),
+        category : category[req.body.category],
+        difficulty : difficulty[req.body.difficulty],
+        scored : req.body.score
+    };
+    const userId = req.user.id;
+    try {
+        await User.findByIdAndUpdate(userId,{ $inc : {score : req.body.score}, $push : {quizLog : sessionData}},{upsert: true});
+        res.status(200).send("Score Updated");
+
+    }catch(error){
+        res.status(400).send(error);
+    }
+   
+
 
 })
 
