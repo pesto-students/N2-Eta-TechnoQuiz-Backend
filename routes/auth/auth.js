@@ -39,7 +39,7 @@ router.post('/login', async (req,res)=>{
 
     const token = jwt.sign({id: user._id},process.env.TOKEN_SECRET);
     const data = {username : user.name, isPremium : user.isPremium, score : user.score}
-    res.header('auth-token',token).send(data);
+    res.header('auth-token',token).send(token);
 })
 
 
