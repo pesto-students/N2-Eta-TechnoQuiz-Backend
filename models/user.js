@@ -34,7 +34,11 @@ const userSchema = new mongo.Schema({
     },
     source : {
         type : String,
-        default : ''
+        default : 'local'
+    },
+    quizLog : {
+        type : Array,
+        default : []
     }
 })
 
