@@ -21,7 +21,7 @@ router.post('/', verifyUser,async (req,res) => {
         const result = {
             'data'   : response.data.map(function(resp){
                 return{
-                'id' : resp.id,
+                'id'       : resp.id,
                 'question' : resp.question,
                 'answers'  : resp.answers,
                 'correct'  : resp.correct_answer

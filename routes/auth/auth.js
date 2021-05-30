@@ -1,3 +1,4 @@
+const mongo = require('../../database/config');
 const router = require('express').Router();
 const User = require('../../models/user')
 const {registerValidation,loginValidation} = require('./validation');
@@ -23,7 +24,7 @@ router.post('/register',async (req,res) => {
         const savedUser = await user.save();
         res.send({user : user._id}); 
     }catch(err){
-        // res.status(400).send(err);
+        res.status(400).send(err);
     }
 });
 
@@ -37,7 +38,7 @@ router.post('/login', async (req,res)=>{
     const validPass = await bcrypt.compare(req.body.password,user.password);
     if(!validPass) return res.status(400).send('Incorrect password/email');
 
-    const token = jwt.sign({id: user._id},process.env.TOKEN_SECRET);
+    const token = jwt.sign({id: user._id},process.env.AUTH_TOKEN_SECRET);
     const data = {username : user.name, isPremium : user.isPremium, score : user.score}
     res.header('auth-token',token).send(token);
 })
