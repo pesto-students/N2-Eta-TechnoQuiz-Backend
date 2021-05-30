@@ -56,7 +56,8 @@ router.post('/verify',verifyUser, async function(req, res, next) {
 			},{ new: true },
 			async function(err, details) {
 				if(err) res.status(400).send(err);
-				await userDetails.findOneAndUpdate({_id : req.user.id},{expiry : new Date(new Date().setDate(new Date().getDate() - 30))})
+				const days = (req.body.plan == "M" ? 30 : 365);
+				await userDetails.findOneAndUpdate({_id : req.user.id},{expiry : new Date(new Date().setDate(new Date().getDate() - days))})
 				res.status(200).send(details)
 			}
 		);
