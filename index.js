@@ -26,5 +26,6 @@ app.use('/api/pay',payment);
 app.get('/', function (req, res) {
     res.status(200).send('TechnoQuiz Backend')
   })
+const port = process.env.port || 3000;
 console.log("PORTTTT",port);
-app.listen(process.env.port || 3000 || process.env.PORT || 8080 || 8081,()=> console.log("Server up and running")); 
+app.listen(port,()=> console.log("Server up and running")); 
