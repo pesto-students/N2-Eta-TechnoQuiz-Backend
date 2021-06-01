@@ -5,7 +5,7 @@ const orderDetails =  require('../../models/order');
 const userDetails = require('../../models/user');
 const { nanoid } = require("nanoid");
 const verifyUser = require('../auth/verifyToken');
-const { param } = require('../auth/auth');
+// const { param } = require('../auth/auth');
 
 let razorPayInstance = new Razorpay({
 	key_id: process.env.RAZORPAY_KEY_ID,
