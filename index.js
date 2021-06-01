@@ -24,4 +24,4 @@ app.use('/api/quiz',quiz);
 app.use('/api/score',score);
 app.use('/api/pay',payment);
 
-app.listen(3000,()=> console.log("Server up and running")); 
+app.listen(process.env.port || 3000,()=> console.log("Server up and running")); 
