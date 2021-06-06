@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 
 // eslint-disable-next-line consistent-return
 module.exports = (req, res, next) => {
-  const token = req.header('auth-token');
+  const token = req.header('Auth-Token');
   if (!token) return res.status(401).send('Access Denied');
   try {
     const verified = jwt.verify(token, process.env.AUTH_TOKEN_SECRET);
