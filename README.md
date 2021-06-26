@@ -1,12 +1,33 @@
 # TechnoQuiz Backend
 
-[Backend](https://technoquiz-env.eba-33dpsiuk.ap-south-1.elasticbeanstalk.com) for [TechnoQuiz](https://technoquiz.netlify.app) app.
+[TechnoQuiz Backend](https://technoquiz-env.eba-33dpsiuk.ap-south-1.elasticbeanstalk.com) 
 
 
 ## How to run this project
 
-- Run `git clone https://github.com/liitcode/TechnoQuiz_Backend`
-- Run Express server
+- Clone Repo 
+```git clone https://github.com/liitcode/TechnoQuiz_Backend```
+
+- Install NPM packages
+```npm install```
+
+- Add .env file 
+```Env
+USERNAME_MONGODB = 
+PASSWORD_MONGODB = 
+CLUSTER_MONGODB = 
+DATABASE_MONGODB = 
+AUTH_TOKEN_SECRET = 
+QAPI_TOKEN = 
+QAPI_BASE = 
+RAZORPAY_KEY_ID = 
+RAZORPAY_KEY_SECRET = 
+ENCRYPTION_SALT = 
+```
+
+- Run the Project
+```npm start```
+
 - You can set the port in index.js file or default will be http://localhost:8000
 
 
@@ -17,7 +38,7 @@
 
 ## Schema Design
 
-![Schema](https://ik.imagekit.io/16zqnfdfuhh/TQ_Backend/Schema_Design.jpg)
+![Schema](https://ik.imagekit.io/16zqnfdfuhh/TQ_Backend/Backend_Architecture.jpg)
 
 
 ## CI/CD & Deployment
@@ -56,7 +77,5 @@
 - NodeJS
 - Express JS
 - MongoDb Cloud
-
-
 
 
