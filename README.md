@@ -1,6 +1,6 @@
 # TechnoQuiz Backend
 
-[TechnoQuiz Backend](https://technoquiz-env.eba-33dpsiuk.ap-south-1.elasticbeanstalk.com) 
+[Backend](https://technoquiz-env.eba-33dpsiuk.ap-south-1.elasticbeanstalk.com) for [TechnoQuiz](https://technoquiz.netlify.app) app.
 
 
 ## How to run this project
