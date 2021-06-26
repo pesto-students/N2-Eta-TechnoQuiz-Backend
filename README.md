@@ -26,7 +26,7 @@
 
 ![dashboard](https://ik.imagekit.io/16zqnfdfuhh/TQ_Backend/Screenshot_2021-06-26_at_6.16.52_PM.png)
 
-    ### CI/CD AWS CodePipeline (code Build,code Deploy)
+### CI/CD AWS CodePipeline (code Build,code Deploy)
 
 ![CiCD](https://ik.imagekit.io/16zqnfdfuhh/TQ_Backend/Screenshot_2021-06-26_at_6.17.34_PM.png)
 
