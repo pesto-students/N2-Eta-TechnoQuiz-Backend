@@ -17,7 +17,7 @@
 
 ## Schema Design
 
-![Schema](https://ik.imagekit.io/16zqnfdfuhh/TQ_Backend/Backend_Architecture.jpg)
+![Schema](https://ik.imagekit.io/16zqnfdfuhh/TQ_Backend/Schema_Design.jpg)
 
 
 ## CI/CD & Deployment
