@@ -78,4 +78,6 @@ ENCRYPTION_SALT =
 - Express JS
 - MongoDb Cloud
 
-
+## Contact
+- Divyanshu Verma [divyanshuverma2396@gmail.com](divyanshuverma2396@gmail.com)
+- Prashant Parashar [prashantparashardt@gmail.com](prashantparashardt@gmail.com)
